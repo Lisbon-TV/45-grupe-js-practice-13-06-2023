@@ -291,12 +291,33 @@ console.log(sentence.replace(/\s/g, ''));
 // ''  -> replacing with empty to rid of the space occurance
 
 
-
 // 9. Return a Boolean if a number is divisible by 10
+console.log();
+console.log('Return a Boolean if a number is divisible by 10:');
+
 
 
 // 10. Return the number of vowels in a string
+console.log();
+console.log('Return the number of vowels in a string:');
 
+let count = 0;
+const vowels = 'aeiouy';  // (sometimes w & y, here incl. y)
 
+function vowelCount(str) {
+   for (let i = 0; i < str.length; i++){
+        if (vowels.indexOf(str[i].toLowerCase()) > -1) { 
+        count++;
+    }
+}
+    return `This sentence has ${count} vowels in it!`;
+}
+
+// console.log(vowelCount('This is mine!'));
+// console.log(vowelCount('This is IT!'));
+console.log(vowelCount('There are many snakes in Africa!'));
+// console.log(vowelCount("I'm afraid of water"));
+
+// neskaiciuoja visus vowels viesuose pvz?! 
 
 
