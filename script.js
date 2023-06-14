@@ -78,6 +78,7 @@ function printEvenNumbers () {  // odd numbers
         }
     }
 }
+
 console.log();
 console.log('...........');
 function printEvenNumbers () {
@@ -295,6 +296,21 @@ console.log(sentence.replace(/\s/g, ''));
 console.log();
 console.log('Return a Boolean if a number is divisible by 10:');
 
+function BooleanNumber(number) {
+    if(number % 10 === 0) {
+        return true;
+    }
+    if(number % 10 !== 0) {
+        return false;
+    }
+}
+
+
+console.log(BooleanNumber(40));
+console.log(BooleanNumber(7));
+console.log(BooleanNumber(120));
+console.log(BooleanNumber(9));
+
 
 
 // 10. Return the number of vowels in a string
@@ -318,6 +334,6 @@ function vowelCount(str) {
 console.log(vowelCount('There are many snakes in Africa!'));
 // console.log(vowelCount("I'm afraid of water"));
 
-// neskaiciuoja visus vowels viesuose pvz?! 
+
 
 
