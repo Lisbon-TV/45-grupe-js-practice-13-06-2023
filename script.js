@@ -177,12 +177,63 @@ function suma(list) {
 
 console.log(ab2);
 
-
+console.log();
 
 // 5. Create a function that reverses an array
 
+const abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+//                       1)
+
+// abc.reverse(); will rid of the original array!
+
+
+//                       2)
+// will store the original array:
+// const newAbc = abc.concat().reverse();
+
+
+//                       3)
+// Also store with the spead operator [...abc]: 
+// const newAbc = [...abc].reverse();
+
+// console.log(abc);
+// console.log(newAbc);
+
+
+//                       4)
+// let reverseAbc = [];
+
+// for (let i = abc.length - 1; i >= 0; i--) {
+//         reverseAbc.push(abc[i])
+//     }
+// console.log(reverseAbc);
+
+
+//                       5)
+// map(), unshift()
+
+// let reverseAbc = [];
+
+// abc.map({value} =>
+//     reverseAbc.unshift(value)
+//     )
+// console.log(reverseAbc);
+
+//                       6)
+
+let reverseAbc = [];
+
+// for (let element of abc) {
+//     reverseAbc.unshift(element)
+//     }
+
+//     console.log(reverseAbc);
+
 
 // 6. Sort an array from lowest to highest
+
+
 
 
 // 8. Remove the spaces found in a string
