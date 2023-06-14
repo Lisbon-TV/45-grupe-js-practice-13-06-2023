@@ -277,6 +277,19 @@ console.log(students);
 
 
 // 8. Remove the spaces found in a string
+console.log();
+console.log('Remove the spaces found in a string:');
+
+const sentence = 'This senstense has 6 white space caracters.'
+
+console.log(sentence.replace(/\s/g, ''));
+// ()  -> giving an argument to .replace('our argument):        
+// /\  -> meta caracter
+// /\s -> will look for the white space caracter occuring first!
+// /g  -> global caract will include all such occurences in the string!
+// ,   -> serator 
+// ''  -> replacing with empty to rid of the space occurance
+
 
 
 // 9. Return a Boolean if a number is divisible by 10
