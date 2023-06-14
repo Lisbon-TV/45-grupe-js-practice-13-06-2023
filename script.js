@@ -224,15 +224,55 @@ const abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n
 
 let reverseAbc = [];
 
-// for (let element of abc) {
-//     reverseAbc.unshift(element)
-//     }
+for (let element of abc) {
+    reverseAbc.unshift(element)
+    }
 
-//     console.log(reverseAbc);
+    console.log(reverseAbc);
 
 
-// 6. Sort an array from lowest to highest
+// 6. Sort an array from lowest to highest:
+// .sort wil sort string values in array according to the abc.
+// .sort will first convert numbers in the arr to strings and compare them to their uft values, therefore we need a function to: 
 
+
+console.log();
+console.log('An array from lowest to highest:');
+
+function compareFunction(a, b) {
+    // 1. < 0 .. a comes first
+    // 1. = 0 .. nothing will be changed
+    // 1. < 0 .. b comes first
+    return a - b;
+}
+
+arr.sort(compareFunction);
+
+console.log(arr);
+
+// arr as objects:
+console.log();
+console.log('Arr as objects. Sorting from lowest to highest:')
+const students = [
+    {
+        stud: 'Ona',
+        ranking: 2,
+    },
+    {
+        stud: 'Petras',
+        ranking: 1,
+    },
+    {
+        stud: 'Kazys',
+        ranking: 3,
+    }
+];
+
+students.sort((a,b) => {
+    return a.ranking - b.ranking; // to switch the order : b - a!
+});
+
+console.log(students);
 
 
 
