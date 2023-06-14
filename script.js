@@ -305,11 +305,11 @@ function BooleanNumber(number) {
     }
 }
 
-
 console.log(BooleanNumber(40));
 console.log(BooleanNumber(7));
 console.log(BooleanNumber(120));
 console.log(BooleanNumber(9));
+console.log(BooleanNumber(5.5));
 
 
 
