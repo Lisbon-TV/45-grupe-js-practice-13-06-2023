@@ -158,13 +158,26 @@ console.log(`${cm} centimetru yra lygu ${conversion(cm, cols)} coliu`)
 
 // 4. Calculate the sum of numbers within an array
 
-let arr = [2, 5, 6, 12];
+const arr = [2, 5, 6, 12];
 
 function sum(no) {
     return arr[0] + arr[1] + arr[2] + arr[3]
 }
 
 console.log(sum(arr));
+
+// arba: 
+
+const ab1 = [2, 5, 6, 12];
+const ab2  = suma(ab1);
+
+function suma(list) {
+    return list[0] + list[1] + list[2] + list[3];
+}
+
+console.log(ab2);
+
+
 
 // 5. Create a function that reverses an array
 
